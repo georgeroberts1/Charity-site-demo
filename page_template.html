@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>VANI Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style-nav.css">
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!- HEADER ->
+<div class="container-fluid" id="header">
+    <header class="primary-header"> 
+        <row>
+            <div class="col-md-3">
+                <div class="header_logo">
+                    <a href="/">
+                        <img src="/images/logo_Header.jpg" alt="Back to the Homepage">
+                    </a>
+                </div>
+            </div>  
+            <div class="col-md-7"> 
+            </div>
+            <div class="col-md-2 text-right" id="social_icon_div">
+                <div class="social_links">
+                    <i class="fa fa-facebook-official" id="social_icon" onclick="window.open('https://www.facebook.com/vanivolunteeringorganization/')"></i>
+                    <i class="fa fa-twitter-square" id="social_icon"></i>
+                    <i class="fa fa-envelope" id="social_icon"></i>
+                </div>
+            </div>
+        </row>
+    </header>   
+</div>
+
+<!- NAV BAR ->
+<div class="container-fluid">
+    <nav class="navbar navbar-default no_flicker main_colour" id="nav_bar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="back_to_top"><a href="home.html">Home</a></li>
+            <li id="about_button"><a href="home.html">About Us</a></li>
+            <li id="get_involved_button"><a href="home.html">Get Involved</a></li>
+            <li id="blog_button"><a href="home.html">Blog</a></li>
+            <li id="contact_button"><a href="home.html">Contact Us</a></li>
+            <li id="donate_button"><a href="donate_page.html">Donate here</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav><!-- /.navbar -->
+</div><!-- /.container -->
+    
+<!--
+            <li>
+              <a class="btn btn-default btn-outline"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+            </li>
+
+          <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse3">
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+              <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </form>
+          </div>
+-->
+
+<!- HOME PAGE CONTENT ->
+
+<div class="container-fluid">
+    <div class="row row_home first_row_color">
+        <img class="community_image" src="/images/community.jpg">
+        <div class="row row_top">
+            <div class="col-md-12 text-center">
+                <div class="scroll_link whole_radius" id="volunteer_button">
+                    <h1 class="scroll_link_text title shadow">
+                        <p>Volunteer with</p><p>VANI</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<!- FOOTER ->
+    <footer class="footer main_colour" id="footer">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-3">
+                <p class="footer_info footer_text line_height">Address:</p>
+                <p class="footer_text line_height">&nbsp; 293</p>
+                <p class="footer_text line_height">&nbsp; Wilmslow Road</p>
+                <p class="footer_text line_height">&nbsp; Manchester</p>
+                <p class="footer_text line_height">&nbsp; M14 6HD</p>
+            </div>
+            <div class="col-md-1">
+                <p class="footer_info footer_text line_height">Telephone:</p>
+                <p class="footer_text line_height">&nbsp; 07436 927855</p>
+            </div>
+        </div>
+    </footer>
+</div>
+    
+<!-- Scripts placed at the end of the document so the pages load faster -->
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+<!-- jQuery functions -->
+    <script>
+        
+        var button_id = ["#about_button","#get_involved_button","#blog_button","#contact_button","#back_to_top", "#volunteer_button"];
+        var element_id = ["#about_info_id","#get_involved_info_id","#blog_info_id","#footer","#header", "#get_involved_info_id"];
+
+        var scroll_to_element = function(bt_id, elm_id) {
+            $(bt_id).click(function() {
+                $('html, body').animate({
+                    scrollTop: $(elm_id).offset().top
+                }, 1000);
+                return false;
+            });
+        };
+
+        var loop_for_all_buttons = function() {
+            for(i=0; i<button_id.length; i++) {
+                scroll_to_element(button_id[i],element_id[i]);
+            }
+        }
+        };
+                    
+        $(document).ready(function(){       
+            checkActive();    
+            
+            var nav_fix_height = $("#header").outerHeight();
+
+            $(window).scroll(function () {
+               if($(window).scrollTop() > nav_fix_height) {
+                   $("#nav_bar").addClass('navbar_fixed');
+               }
+                else {
+                   $("#nav_bar").removeClass('navbar_fixed');
+                }
+            });
+            
+            loop_for_all_buttons();
+        
+        });
+    </script>
+</body>
+</html>

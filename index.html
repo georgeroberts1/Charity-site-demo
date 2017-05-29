@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang=en>
+<head>
+    <title>VANI Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="normalize.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style-nav.css">
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!- HEADER ->
+    
+<div class="container-fluid" id="header">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12" id="logo_column">
+            <a href="/">
+                <img src="/images/logo_Header.jpg" alt="Back to the Homepage">
+            </a>
+        </div>  
+
+        <div class="col-md-3 col-sm-6 col-xs-12" id="social_column">
+            <i class="fa fa-facebook-official" id="social_icon" onclick="window.open('https://www.facebook.com/vanivolunteeringorganization/')"></i>
+            <i class="fa fa-twitter-square" id="social_icon"></i>
+            <i class="fa fa-envelope" id="social_icon"></i>
+        </div>
+    </div>
+</div>
+
+<!- NAV BAR ->
+    
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default no_flicker main_colour" id="nav_bar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-style">
+                <li id="back_to_top"><a href="index.html">Home</a></li>
+                <li id="about_button"><a href="index.html">About Us</a></li>
+                <li id="get_involved_button"><a href="index.html">Get Involved</a></li>
+                <li id="blog_button"><a href="index.html">Blog</a></li>
+                <li id="contact_button"><a href="index.html">Contact Us</a></li>
+                <li id="donate_button"><a onclick="window.open('https://www.givey.com/charity/')">Donate Here</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav><!-- /.navbar -->
+    </div>
+</div><!-- /.container -->
+
+<!- HOME PAGE CONTENT ->
+
+<div class="container-fluid">
+    <div class="row row_home first_row_color">
+        <img class="community_image" src="/images/community.jpg"/>
+        <div class="col-md-12 text-center scroll_link_div">
+            <div class="scroll_link whole_radius" id="volunteer_button">
+                <h1 class="scroll_link_text title shadow">
+                    <p>Volunteer with</p><p>VANI</p>
+                </h1>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <form class="email_input_form top">
+                    <fieldset class="email_div">
+                        <input class="email_input" id="email_input1" type="text" value="" placeholder="Enter email address">
+                        <button type="button" class="subscribe_button" id="button_input" onclick="save_email('input1')">Subscribe</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row row_info second_row_color" id="about_info_id">
+        <div class="row top_margin" id="info_paragraph">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8 text-center">
+                <div class="container-fluid">
+                    <h1 class="info_text info_title"> What does VANI do? </h1><h6><br></h6>
+                    <h2 class="info_text info_h2"> Subtitle goes here </h2>
+                    <p class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                    <p class="info_text">Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="text-center col-md-4 nopadding">
+                <div class="content content_style_1">
+                    <p class="info_text">VANI does this</p>
+                </div>
+            </div>
+            <div class="text-center col-md-4 nopadding">
+                <div class="content content_style_1">
+                    <p class="info_text">VANI does that</p>
+                </div>                
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="text-center col-md-4 nopadding">
+                <div class="content content_style_1">
+                    <p class="info_text">VANI does this too</p>
+                </div>
+            </div>
+            <div class="text-center col-md-4 nopadding">
+                <div class="content content_style_1">
+                    <p class="info_text">VANI also does that</p>
+                </div>                
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row row_info third_row_color" id="get_involved_info_id">
+        <div class="row top_margin" id="info_paragraph">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8 text-center">
+                <h1 class="info_text info_title white_text"> How can I get involved? </h1>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <div class="slider1">
+                  <div class="slide">
+                      <p class="slide_content info_text">Some content here</p> 
+                      <div class="slide_image">
+                          <img class="slide_image" src="http://placehold.it/510x250&text=First Way Image">
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <p class="slide_content info_text">Some content here</p> 
+                      <img class="slide_image" src="http://placehold.it/510x250&text=Second Way Image">
+                  </div>
+                  <div class="slide">
+                      <p class="slide_content info_text">Some content here</p> 
+                      <img class="slide_image" src="http://placehold.it/510x250&text=Third Way Image">
+                  </div>
+                  <div class="slide">
+                      <p class="slide_content info_text">Some content here</p> 
+                      <img class="slide_image" src="http://placehold.it/510x250&text=Fourth Way Image">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     
+<div class="container-fluid">
+    <div class="row row_info fourth_row_color" id="blog_info_id">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1 class="info_text info_title"> Latest news! </h1>
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="blog_post">
+                    <h3 class="info_title"> First story </h3>
+                    <p class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+                    <img class="blog_image" src="http://placehold.it/510x250&text=First Story Image">
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="blog_post">
+                    <h3 class="info_title"> Second story </h3>
+                    <p class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctu.</p>
+                    <img class="blog_image" src="http://placehold.it/510x250&text=Second story Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row row_contact fifth_row_color" id="contact_info_id">        
+        <div class="col-md-10 col-md-offset-1 text-center">
+            <h2 class="link_text shadow get_in_touch">Sign up for more information</h2>
+        </div>
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <form class="email_input_form">
+                <fieldset class="email_div">
+                    <input class="email_input" id="email_input2" type="text" value="" placeholder="Enter email address">
+                    <button type="button" class="subscribe_button" id="button_input" onclick="save_email('input2')">Subscribe</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+<!- FOOTER ->
+
+<div class="container-fluid">
+    <div class="row row_footer main_colour" id="footer">
+        <div class="col-md-12 text-right">
+            <div class="contact_details">
+                <div class="address">
+                    <p>Address:</p>
+                    <p>&nbsp; 293</p>
+                    <p>&nbsp; Wilmslow Road</p>
+                    <p>&nbsp; Manchester</p>
+                    <p>&nbsp; M14 6HD</p>
+                </div>
+                <div class="telephone">
+                    <p>Telephone:</p>
+                    <p>&nbsp; 07436 927855</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- Scripts placed at the end of the document so the pages load faster -->
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    
+<!-- BXSlider -->
+    <script src="jquery.bxslider.js"></script>
+
+<!-- Stripe pay -->
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<!-- JS/jQuery functions -->
+    <script>
+
+        var button_id = ["#about_button","#get_involved_button","#blog_button","#contact_button","#back_to_top", "#volunteer_button"];
+        var element_id = ["#about_info_id","#get_involved_info_id","#blog_info_id","#footer","#header", "#about_info_id"];
+        var user_signed_up = false;
+
+        function scroll_to_element(button, index) {
+            $(button).click(function() {
+                $('html, body').animate({
+                    scrollTop: $(element_id[index]).offset().top
+                }, 1000);
+                return false;
+            });
+        };
+        
+        function loop_for_all_buttons() {
+            button_id.forEach(scroll_to_element);
+        };
+        
+        function get_input_value(input) {
+            var input_id = "";
+            switch(input) {
+                case "input1":
+                    input_id = document.getElementById("email_input1");
+                    break;
+                case "input2":
+                    input_id = document.getElementById("email_input2");
+                    break;
+            }
+            return input_id;
+        };
+        
+        function check_value(input_id) {
+            var value_present = false;
+            if(input_id.value !== "") {
+                value_present = true;
+            }
+            return value_present;
+        };
+        
+        function check_valid_email(input_value) {
+            // finish function to check if input is a valid email
+            return true;
+        };
+        
+        function check_signed_up(user_signed_up, email) {
+            // finish function to check if email exists in DB
+            return user_signed_up;
+        };
+        
+        function email_to_db(email, time_submitted) {
+            console.log('{ "email":' + '"' + email + '", ' + '"ISO_time":' + '"' + time_submitted.toISOString() + '" }');
+        };
+        
+        function test_db() {
+
+        };
+        
+        function save_email(input) {
+            test_db();
+            var submit_time = new Date();
+            var input_id = get_input_value(input);
+            var value_present = check_value(input_id);
+            
+            if(value_present) {                
+                if(check_signed_up(user_signed_up, input_id.value)){
+                    input_id.value = "";
+                    input_id.placeholder = "It seems that you are already signed up!";
+                    input_id.readOnly = true;
+                    button_input.disabled = true;
+                }
+                else if(check_valid_email(input_id.value)) {
+                    email_to_db(input_id.value, submit_time);
+                    input_id.value = "";
+                    input_id.placeholder = "Thanks for signing up!";
+                    input_id.readOnly = true;
+                    button_input.disabled = true;
+                    user_signed_up = true;
+                }
+            }
+            else {
+                input_id.placeholder = "Please enter your email address here";
+            }
+        };
+                    
+        $(document).ready(function(){       
+            
+            var nav_fix_height = $("#header").outerHeight();
+            
+            $(window).scroll(function () {
+               if($(window).scrollTop() > nav_fix_height) {
+                   $("#nav_bar").addClass('navbar_fixed');
+               }
+                else {
+                   $("#nav_bar").removeClass('navbar_fixed');
+                }
+            });
+            
+            loop_for_all_buttons();
+                        
+            $('.slider1').bxSlider({
+                minSlides: 1,
+                maxSlides: 2,
+                displaySlideQty: 2,
+            });
+        });
+    </script>
+    
+</body>
+</html>

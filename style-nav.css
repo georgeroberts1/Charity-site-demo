@@ -1,0 +1,89 @@
+/*Nav-bar*/
+.navbar {
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-nav.navbar-style > li > a{
+    font-weight: bold;
+    color: #FEFEFE;
+    transition: background 0.2s linear;
+}
+
+.navbar-nav.navbar-style > li > a:hover, .navbar-nav.navbar-style > li > a:focus, .navbar-nav.navbar-style > li > a:visited{
+    background-color: #FEFEFE;
+    cursor: default;   
+}
+
+.btn.btn-circle { 
+    border-radius: 50px; 
+}
+
+.navbar .navbar-collapse { 
+    position: relative;
+    text-align: center;
+}
+
+.navbar .nav-collapse { 
+    position: absolute; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: 0; 
+    padding-right: 150px; 
+    padding-left: 80px; 
+    width: 100%; 
+}
+
+.navbar .nav-collapse .navbar-form { 
+    border-width: 0; 
+    box-shadow: none; 
+}
+
+.nav-collapse>li { 
+    float: right; 
+}
+
+.navbar_fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #FEFEFE;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #FEFEFE;
+}
+
+@media screen and (max-width: 767px) {    
+    .navbar .nav-collapse { 
+        margin: 7.5px auto; 
+        padding: 0; 
+    }
+    
+    .navbar .nav-collapse .navbar-form { 
+        margin: 0; 
+    }
+    
+    .nav-collapse>li { 
+        float: none; 
+    }
+    
+    .navbar-nav.navbar-style {
+        width: 100%;
+    }
+}
+
